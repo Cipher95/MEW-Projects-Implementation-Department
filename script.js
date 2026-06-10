@@ -4,42 +4,42 @@ document.addEventListener('DOMContentLoaded', () => {
 	 // --- REPORTS DATA ---
     const reportsList = [
         
-        { month: 1, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 1, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 1, person: "20XX3",  credit_spend: "30000"  },
-	{ month: 2, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 2, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 2, person: "20XX3",  credit_spend: "30000"  },
-	{ month: 3, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 3, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 3, person: "20XX3",  credit_spend: "30000"  },
-	{ month: 4, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 4, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 4, person: "20XX3",  credit_spend: "30000"  },
-	{ month: 5, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 5, person: "20XX2",  credit_spend: "30000"  },
-	{ month: 5, person: "20XX3",  credit_spend: "30000"  },
-	{ month: 6, person: "20XX2",  credit_spend: ""  },
-	{ month: 6, person: "20XX2",  credit_spend: ""  },
-	{ month: 6, person: "20XX3",  credit_spend: ""  },
-	{ month: 7, person: "20XX2",  credit_spend: ""  },
-	{ month: 7, person: "20XX2",  credit_spend: ""  },
-	{ month: 7, person: "20XX3",  credit_spend: ""  },
-	{ month: 8, person: "20XX2",  credit_spend: ""  },
-	{ month: 8, person: "20XX2",  credit_spend: ""  },
-	{ month: 8, person: "20XX3",  credit_spend: ""  },
-	{ month: 9, person: "20XX2",  credit_spend: ""  },
-	{ month: 9, person: "20XX2",  credit_spend: ""  },
-	{ month: 9, person: "20XX3",  credit_spend: ""  },
-	{ month: 10, person: "20XX2",  credit_spend: ""  },
-	{ month: 10, person: "20XX2",  credit_spend: ""  },
-	{ month: 10, person: "20XX3",  credit_spend: ""  },
-	{ month: 11, person: "20XX2",  credit_spend: ""  },
-	{ month: 11, person: "20XX2",  credit_spend: ""  },
-	{ month: 11, person: "20XX3",  credit_spend: ""  },
-	{ month: 12, person: "20XX2",  credit_spend: ""  },
-	{ month: 12, person: "20XX2",  credit_spend: ""  },
-	{ month: 12, person: "20XX3",  credit_spend: ""  }
+        { month: 1, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 1, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 1, user: "20XX3",  credit_spend: "30000"  },
+	{ month: 2, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 2, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 2, user: "20XX3",  credit_spend: "30000"  },
+	{ month: 3, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 3, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 3, user: "20XX3",  credit_spend: "30000"  },
+	{ month: 4, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 4, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 4, user: "20XX3",  credit_spend: "30000"  },
+	{ month: 5, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 5, user: "20XX2",  credit_spend: "30000"  },
+	{ month: 5, user: "20XX3",  credit_spend: "30000"  },
+	{ month: 6, user: "20XX2",  credit_spend: ""  },
+	{ month: 6, user: "20XX2",  credit_spend: ""  },
+	{ month: 6, user: "20XX3",  credit_spend: ""  },
+	{ month: 7, user: "20XX2",  credit_spend: ""  },
+	{ month: 7, user: "20XX2",  credit_spend: ""  },
+	{ month: 7, user: "20XX3",  credit_spend: ""  },
+	{ month: 8, user: "20XX2",  credit_spend: ""  },
+	{ month: 8, user: "20XX2",  credit_spend: ""  },
+	{ month: 8, user: "20XX3",  credit_spend: ""  },
+	{ month: 9, user: "20XX2",  credit_spend: ""  },
+	{ month: 9, user: "20XX2",  credit_spend: ""  },
+	{ month: 9, user: "20XX3",  credit_spend: ""  },
+	{ month: 10, user: "20XX2",  credit_spend: ""  },
+	{ month: 10, user: "20XX2",  credit_spend: ""  },
+	{ month: 10, user: "20XX3",  credit_spend: ""  },
+	{ month: 11, user: "20XX2",  credit_spend: ""  },
+	{ month: 11, user: "20XX2",  credit_spend: ""  },
+	{ month: 11, user: "20XX3",  credit_spend: ""  },
+	{ month: 12, user: "20XX2",  credit_spend: ""  },
+	{ month: 12, user: "20XX2",  credit_spend: ""  },
+	{ month: 12, user: "20XX3",  credit_spend: ""  }
     ];
 	const total = [
         
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 1)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 2)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -164,8 +164,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 3)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -206,8 +206,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 4)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -248,8 +248,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 5)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -290,8 +290,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 6)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -332,8 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 7)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -374,8 +374,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -383,7 +383,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 8)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -416,8 +416,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -425,7 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 9)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -458,8 +458,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 10)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -500,8 +500,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 11)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
@@ -542,8 +542,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     <table class="report-table">
                         <thead>
                             <tr>
-				<th>قائمة الأشخاص</th>
-				<th>الرصيد المصروف لهذا الشخص</th>
+				<th>قائمة المستخدمين</th>
+				<th>الرصيد المصروف لهذا المستخدم</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -551,7 +551,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter(report => report.month === 12)
     .map(report => `
         <tr>
-            <td>${report.person}</td>
+            <td>${report.user}</td>
             <td>${report.credit_spend}</td>
         </tr>
     `).join('')
