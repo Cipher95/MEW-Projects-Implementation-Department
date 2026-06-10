@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     id: '1st_month',
                     title: 'شهر 1',
-                    image: 'el3rod-jpg.webp',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '2nd_month',
                     title: 'شهر 2',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '3rd_month',
                     title: 'شهر 3',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '4th_month',
                     title: 'شهر 4',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -242,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '5th_month',
                     title: 'شهر 5',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '6th_month',
                     title: 'شهر 6',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '7th_month',
                     title: 'شهر 7',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '8th_month',
                     title: 'شهر 8',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -410,7 +410,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '9th_month',
                     title: 'شهر 9',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -452,7 +452,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '10th_month',
                     title: 'شهر 10',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -494,7 +494,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '11th_month',
                     title: 'شهر 11',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
@@ -536,7 +536,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },{
                     id: '12th_month',
                     title: 'شهر 12',
-                    image: 'others/image_11~0.png',
+                    image: '',
 					description: `
 					<div class="table-responsive">
                     <table class="report-table">
