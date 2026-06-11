@@ -341,9 +341,12 @@ main#content-area.fade-out { opacity: 0; }
     .mmsf-header, .mmsf-status-bar {
         font-size: 12px;
     }
-	#clock { font-size: 18px; }
+	#main-title {
+		font-size: 12px;
+	}
+	#clock { font-size: 12px; }
 
-#date-day { font-size: 18px; }
+#date-day { font-size: 12px; }
 }
 
 @media (max-width: 600px) {
